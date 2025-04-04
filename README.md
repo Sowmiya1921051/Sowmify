@@ -25,17 +25,19 @@
 ```
 📁 src
  ┣ 📁 components
- ┃ ┣ 📜 MusicPlayer.jsx
- ┃ ┣ 📜 SongList.jsx
- ┃ ┣ 📜 SearchBar.jsx
- ┃ ┗ 📜 Favourites.jsx
+ ┃ ┣ 📜 AlbumView.tsx
+ ┃ ┣ 📜 EmptyState.tsx
+ ┃ ┣ 📜 Player.tsx
+ ┃ ┗ 📜 SearchBar.tsx
+ ┃ ┗ 📜 SideBar.tsx
+ ┃ ┗ 📜 TrackItem.tsx
+ ┃ ┗ 📜 TrackList.tsx
  ┣ 📁 assets
  ┃ ┣ 🎵 music files
- ┃ ┣ 🎨 thumbnails
- ┃ ┗ 🎭 icons
  ┣ 📁 styles
- ┃ ┣ 📜 main.scss
- ┃ ┗ 📜 variables.scss
+ ┃ ┣ 📜 index.scss
+ ┣ 📁 data
+ ┃ ┣ 📜 tracks.ts
  ┣ 📜 App.js
  ┣ 📜 data.json (Dummy Song Data)
  ┣ 📜 index.js
@@ -44,7 +46,7 @@
 ## 🛠 Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/react-music-player.git
+   git clone https://github.com/Sowmiya1921051/react-music-player.git
    ```
 2. Navigate into the project folder:
    ```sh
@@ -62,20 +64,24 @@
 ## 📜 Dummy Data (data.json)
 ```json
 [
-  {
-    "title": "Lost in Sound",
-    "thumbnail": "path-to-image.jpg",
-    "musicUrl": "path-to-music.mp3",
-    "duration": "3:45",
-    "artistName": "John Doe"
+   {
+    id: '1',
+    title: "Dreamy Reflection",
+    artistName: "Benjamin Tissot",
+    thumbnail: "https://images.unsplash.com/photo-1500462918059-b1a0cb512f1d?auto=format&fit=crop&w=300&h=300&q=80",
+    musicUrl: "https://www.bensound.com/bensound-music/bensound-buddy.mp3",
+    duration: "2:02",
+    color: "rgba(240, 100, 40, 0.8)"
   },
   {
-    "title": "Ocean Waves",
-    "thumbnail": "path-to-image.jpg",
-    "musicUrl": "path-to-music.mp3",
-    "duration": "4:20",
-    "artistName": "Jane Smith"
-  }
+    id: '2',
+    title: "Piano Serenity",
+    artistName: "Scott Holmes",
+    thumbnail: "https://images.unsplash.com/photo-1475275166152-f1e8005f9854?auto=format&fit=crop&w=300&h=300&q=80",
+    musicUrl: "https://files.freemusicarchive.org/storage-freemusicarchive-org/music/no_curator/Scott_Holmes/Inspiring_Documentary_Music/Scott_Holmes_-_02_-_Uplifting_Inspirational_Corporate.mp3",
+    duration: "2:56",
+    color: "rgba(40, 60, 100, 0.8)"
+  },
 ]
 ```
 
@@ -97,9 +103,7 @@
 4. Push to the branch (`git push origin feature-name`)
 5. Open a Pull Request
 
-## 📜 License
-This project is **MIT licensed**.
 
 ---
-Made with ❤️ by **Sowmiya N**
+Made with 💛 by **Sowmiya N**
 
