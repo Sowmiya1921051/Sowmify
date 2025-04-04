@@ -46,7 +46,7 @@
 ## 🛠 Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/Sowmiya1921051/react-music-player.git
+   git clone https://github.com/Sowmiya1921051/Sowmify.git
    ```
 2. Navigate into the project folder:
    ```sh
